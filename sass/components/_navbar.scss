@@ -1,0 +1,43 @@
+.navbar {
+    height: 96px;
+    ul {
+        height: 1.375em;
+        display: flex;
+        li {
+            height: 100%;
+            margin: auto 0;
+            width: 5em;
+            text-align: center;
+            a {
+                font-weight: bold;
+                text-align: center;
+                z-index: 0;
+                font-size: 1.125em;
+                letter-spacing: -0.045em;
+                cursor: pointer;
+                position: relative;
+                margin-left: 50px;
+                &::before {
+                    content: '';  
+                    // z-index: 0;
+                    margin: auto;
+                    left: 0;
+                    right: 0;
+                    top: 1.625em;
+                    display: block;
+                    position: relative;
+                    width: 5em;
+                    height: 0.3em;
+                    border: 0.125em $colour-black solid;
+                    border-radius: 0.125em;
+                }
+                &:hover {
+                    &::before {
+
+
+                    }
+                }
+            }
+        }
+    }
+}
